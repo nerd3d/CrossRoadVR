@@ -407,6 +407,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _TeleportDistance: 10
+  _ShowDebug: 0
+  _TargetPrefab: {fileID: 1007679371918392, guid: a4d5442129772304b9d716d0ac103197,
+    type: 2}
 --- !u!1 &755992568
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +868,21 @@ Prefab:
     - target: {fileID: 4128679706258018, guid: ab2c10dbeb4c1874383b5ae08ea3a830, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 135
+      objectReference: {fileID: 0}
+    - target: {fileID: 54592119926088348, guid: ab2c10dbeb4c1874383b5ae08ea3a830,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54592119926088348, guid: ab2c10dbeb4c1874383b5ae08ea3a830,
+        type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65856155255228148, guid: ab2c10dbeb4c1874383b5ae08ea3a830,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab2c10dbeb4c1874383b5ae08ea3a830, type: 2}
