@@ -6,9 +6,9 @@ public class VehicleSpawner : MonoBehaviour {
 
     public float spawnFrequency = 5;
     public float laneSpeed = 4;
-    [Range(0.0f, 0.01f)]
+    //[Range(0.0f, 0.01f)]
     public float swerveSpeed = 0.001f;
-    [Range(0.0f, 10.0f)]
+    //[Range(0.0f, 10.0f)]
     public float swerveMax = 1;
     public GameObject[] spawneable;
     public float vehicleLifeSpan = 20;
@@ -30,6 +30,7 @@ public class VehicleSpawner : MonoBehaviour {
         //newVehicle.transform.position = transform.position;
         newVehicle.GetComponent<Drive>().speed = laneSpeed;
         newVehicle.GetComponent<Drive>().swerveSpeed = swerveSpeed;
+        newVehicle.GetComponent<Drive>().swerveMax = swerveMax;
         vehicles.Enqueue(newVehicle);
     }
     private void DestroyVehicle()

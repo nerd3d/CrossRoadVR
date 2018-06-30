@@ -178,7 +178,7 @@ Prefab:
     - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
         type: 2}
       propertyPath: swerveSpeed
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
         type: 2}
@@ -188,7 +188,17 @@ Prefab:
     - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
         type: 2}
       propertyPath: spawnFrequency
-      value: 7
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: swerveMax
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: vehicleLifeSpan
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
@@ -323,7 +333,7 @@ Prefab:
     - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
         type: 2}
       propertyPath: swerveSpeed
-      value: 0.005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1218395321012552, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
       propertyPath: m_Name
@@ -332,17 +342,22 @@ Prefab:
     - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
         type: 2}
       propertyPath: swerveMax
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
         type: 2}
       propertyPath: laneSpeed
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
         type: 2}
       propertyPath: spawnFrequency
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: vehicleLifeSpan
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
@@ -433,6 +448,100 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &889703007
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: spawneable.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -30.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: spawneable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1843191313029342, guid: ab2c10dbeb4c1874383b5ae08ea3a830,
+        type: 2}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: swerveSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218395321012552, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+      propertyPath: m_Name
+      value: VehicleSpawn (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: swerveMax
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: laneSpeed
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: spawnFrequency
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: vehicleLifeSpan
+      value: 30
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1104133526
 Prefab:
   m_ObjectHideFlags: 0
