@@ -10,6 +10,7 @@ public class Look_Teleport : MonoBehaviour
     [Range(0.0f, 100.0f)] public float _TeleportDistance;
     public bool _ShowDebug;
     public GameObject _TargetPrefab;
+    public bool _ActiveAim;
 
     private OVRCameraRig _CameraRig = null;
     private GameObject _TargetInstance = null;
@@ -43,19 +44,23 @@ public class Look_Teleport : MonoBehaviour
         Vector3 moveDir = new Vector3(lookDir.x, 0, lookDir.z);
         Vector3 moveLoc = moveDir.normalized * _TeleportDistance + transform.position;
 
-        if (_InHand == Hand.NONE && (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire3")) )
+        if ((Input.GetButton("Fire1") || Input.GetButton("Fire3")) )
         {
             if (_TargetInstance == null)
             {
                 _TargetInstance = Instantiate(_TargetPrefab, moveLoc, transform.rotation);
-                if (Input.GetButtonDown("Fire1"))
+                if (_InHand == Hand.NONE && Input.GetButtonDown("Fire1"))
                 {
                     _InHand = Hand.RIGHT;
                 }
-                else
+                if(_InHand == Hand.NONE && Input.GetButtonDown("Fire3"))
                 {
                     _InHand = Hand.LEFT;
                 }
+            }
+            else if (_ActiveAim)
+            {
+                _TargetInstance.transform.SetPositionAndRotation(moveLoc, Quaternion.Euler(lookDir));
             }
             else
             {
