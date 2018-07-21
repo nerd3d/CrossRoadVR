@@ -14,7 +14,7 @@ public class EndZone : MonoBehaviour {
 	void Update () {
 		
 	}
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         Debug.Log("ENDZONE COLLISION @ " + DateTime.Now);
         if(collision.gameObject.tag == "Player")
