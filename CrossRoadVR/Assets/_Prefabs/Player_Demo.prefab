@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114787460005858632}
   m_Layer: 8
   m_Name: Player_Demo
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114491875716518734}
   - component: {fileID: 82859106722400306}
   - component: {fileID: 114562012525680148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LocalAvatar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4869108403028768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftHandAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4332292904677850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TrackingSpace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4155543335299498}
   - component: {fileID: 20521043423970856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightEyeAnchor
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 4919743013575322}
   - component: {fileID: 114438887840163510}
   - component: {fileID: 114892477364020838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: OVRCameraRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4587386193462050}
   - component: {fileID: 114621120741001502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 81974792847001988}
   - component: {fileID: 20108841897412702}
   - component: {fileID: 114069848887028338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4133512710651018}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightHandAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4502452767702796}
   - component: {fileID: 114585331000859174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: controller_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4327505682830196}
   - component: {fileID: 114382424857711024}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hand_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4325837512869004}
   - component: {fileID: 20162108318806254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftEyeAnchor
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4971148007389324}
   - component: {fileID: 114408864486183570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hand_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4163352874507682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TrackerAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4485611698756462}
   - component: {fileID: 114848997433739132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4552818501372112}
   - component: {fileID: 114430485401660046}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: controller_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4808719103222326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ForwardDirection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +907,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1139221558353910}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82395a7b9545b39488378d27f3d9cb5f, type: 3}
   m_Name: 
@@ -916,7 +916,7 @@ MonoBehaviour:
   _ShowDebug: 0
   _TargetPrefab: {fileID: 1007679371918392, guid: a4d5442129772304b9d716d0ac103197,
     type: 2}
-  _ActiveAim: 0
+  _ActiveAim: 1
 --- !u!114 &114848997433739132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -980,7 +980,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1139221558353910}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 986fe9bd415f46741b91e51ffef6a578, type: 3}
   m_Name: 
