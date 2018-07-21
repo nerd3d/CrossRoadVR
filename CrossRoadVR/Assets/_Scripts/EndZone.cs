@@ -21,7 +21,12 @@ public class EndZone : MonoBehaviour {
         {
             var em = GetComponentInChildren<ParticleSystem>().emission;
             em.rateOverTime = 50;
+            var m = GetComponentInChildren<ParticleSystem>().main;
+            m.startColor = Color.blue;
+            var s = GetComponentInChildren<ParticleSystem>().shape;
+            s.shapeType = ParticleSystemShapeType.Hemisphere;
             GetComponent<Collider>().enabled = false;
+            
         }
     }
 
