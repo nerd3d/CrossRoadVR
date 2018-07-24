@@ -7,7 +7,7 @@ public class Point_Teleport : MonoBehaviour
 {
     private enum Hand { NONE, LEFT, RIGHT };
 
-    [Range(0.0f, 100.0f)] public float _TeleportDistance;
+    [Range(5.0f, 30.0f)] public float _TeleportDistance;
     public bool _ShowDebug;
     public GameObject _TargetPrefab;
     public bool _ActiveAim;
@@ -67,7 +67,13 @@ public class Point_Teleport : MonoBehaviour
 
             lookDir = handAnchor.TransformDirection(Vector3.forward);
             moveDir = new Vector3(lookDir.x, 0, lookDir.z);
-            moveLoc = moveDir.normalized * _TeleportDistance + transform.position;
+            float aimAngle = Vector3.Angle(lookDir, moveDir) / 45;
+            aimAngle = Mathf.Min(aimAngle, 1);
+            if (lookDir.y < 0)
+            {
+                aimAngle = -1 * aimAngle;
+            }
+            moveLoc = moveDir.normalized * (_TeleportDistance + aimAngle * 5) + transform.position;
 
             if (_TargetInstance == null)
             {

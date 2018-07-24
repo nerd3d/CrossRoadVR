@@ -501,3 +501,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a2155d6206c6d740a61111b93ffe39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _PlayerSpawn: {fileID: 0}

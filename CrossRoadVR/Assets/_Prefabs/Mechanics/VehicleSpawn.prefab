@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnFrequency: 5
   laneSpeed: 3
-  swerve: 1
+  swerveSpeed: 0.001
+  swerveMax: 1
   spawneable: []
   vehicleLifeSpan: 20
