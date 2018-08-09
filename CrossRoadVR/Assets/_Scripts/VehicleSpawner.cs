@@ -19,6 +19,12 @@ public class VehicleSpawner : MonoBehaviour {
     // Use this for initialization
     void Start () {
         vehicles = new Queue<GameObject>();
+        GameObject temp = SpawnVehicle();
+        temp.transform.position = new Vector3(temp.transform.position.x + 4 +5*laneSpeed, temp.transform.position.y, temp.transform.position.z);
+        temp = SpawnVehicle();
+        temp.transform.position = new Vector3(temp.transform.position.x + 4 +10*laneSpeed, temp.transform.position.y, temp.transform.position.z);
+        temp = SpawnVehicle();
+        temp.transform.position = new Vector3(temp.transform.position.x + 4 +15*laneSpeed, temp.transform.position.y, temp.transform.position.z);
         InvokeRepeating("SpawnVehicle", spawnStartTime, spawnFrequency);
         InvokeRepeating("DestroyVehicle", vehicleLifeSpan+spawnStartTime, spawnFrequency);
         ranMax = spawneable.Length;
@@ -27,7 +33,7 @@ public class VehicleSpawner : MonoBehaviour {
 	//called once per fixed "frame" (computer frame rate will not affect gameplay speed)
 	void FixedUpdate () {
 	}
-    private void SpawnVehicle()
+    private GameObject SpawnVehicle()
     {
         GameObject newVehicle = Instantiate(spawneable[random.Next(ranMax)],transform); //spawn random vehicle from list of spawnables
         //newVehicle.transform.position = transform.position;
@@ -35,6 +41,7 @@ public class VehicleSpawner : MonoBehaviour {
         newVehicle.GetComponent<Drive>().swerveSpeed = swerveSpeed;
         newVehicle.GetComponent<Drive>().swerveMax = swerveMax;
         vehicles.Enqueue(newVehicle);
+        return newVehicle;
     }
     private void DestroyVehicle()
     {
