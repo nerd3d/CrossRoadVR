@@ -120,11 +120,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
-        type: 2}
-      propertyPath: spawneable.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
       propertyPath: m_LocalPosition.x
       value: -30.4
@@ -156,49 +151,6 @@ Prefab:
     - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
-        type: 2}
-      propertyPath: spawneable.Array.data[0]
-      value: 
-      objectReference: {fileID: 1843191313029342, guid: ab2c10dbeb4c1874383b5ae08ea3a830,
-        type: 2}
-    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
-        type: 2}
-      propertyPath: swerveSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
-        type: 2}
-      propertyPath: laneSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
-        type: 2}
-      propertyPath: spawnFrequency
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
-        type: 2}
-      propertyPath: swerveMax
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
-        type: 2}
-      propertyPath: vehicleLifeSpan
-      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
@@ -278,7 +230,7 @@ Prefab:
     - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
         type: 2}
       propertyPath: spawneable.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
       propertyPath: m_LocalPosition.x
@@ -359,6 +311,18 @@ Prefab:
       propertyPath: vehicleLifeSpan
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: spawneable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1471342161739320, guid: 9e1c629fb1941574f9e3b64befe0a914,
+        type: 2}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: spawneable.Array.data[2]
+      value: 
+      objectReference: {fileID: 1542193428837170, guid: 288ed4e0ed6dc644e9d9569e02de7876,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
   m_IsPrefabParent: 0
@@ -500,7 +464,7 @@ Prefab:
     - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
         type: 2}
       propertyPath: spawneable.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4158729000640688, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
       propertyPath: m_LocalPosition.x
@@ -581,6 +545,18 @@ Prefab:
       propertyPath: vehicleLifeSpan
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: spawneable.Array.data[1]
+      value: 
+      objectReference: {fileID: 1471342161739320, guid: 9e1c629fb1941574f9e3b64befe0a914,
+        type: 2}
+    - target: {fileID: 114211263252181948, guid: 8c14d342f3b9ab64a890f93d6c8be0bf,
+        type: 2}
+      propertyPath: spawneable.Array.data[2]
+      value: 
+      objectReference: {fileID: 1542193428837170, guid: 288ed4e0ed6dc644e9d9569e02de7876,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c14d342f3b9ab64a890f93d6c8be0bf, type: 2}
   m_IsPrefabParent: 0

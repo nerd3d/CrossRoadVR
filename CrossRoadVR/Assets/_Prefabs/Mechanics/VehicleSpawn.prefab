@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1218395321012552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalPosition: {x: -30.4, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -107,9 +107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fbe58c15e3560543adccdbfa3422927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnFrequency: 5
-  laneSpeed: 3
-  swerveSpeed: 0.001
-  swerveMax: 1
-  spawneable: []
-  vehicleLifeSpan: 20
+  spawnFrequency: 8
+  laneSpeed: 5
+  swerveSpeed: 0.1
+  swerveMax: 40
+  spawneable:
+  - {fileID: 1843191313029342, guid: ab2c10dbeb4c1874383b5ae08ea3a830, type: 2}
+  - {fileID: 1471342161739320, guid: 9e1c629fb1941574f9e3b64befe0a914, type: 2}
+  - {fileID: 1542193428837170, guid: 288ed4e0ed6dc644e9d9569e02de7876, type: 2}
+  vehicleLifeSpan: 30
